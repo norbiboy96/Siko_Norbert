@@ -1,0 +1,52 @@
+body, html{
+  height:100%;
+}
+
+#container{
+  height: 100%;
+  display:flex;
+  /* flexbx stilus */
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+}
+}
+#flavor{
+  position:relative;
+  width: 190px;
+  height: 260px;
+  border-radius: 80px 80px 10px 10px;
+  /* stanga dreapta ,cele de jos stanga dreapta */
+  overflow: hidden;
+  /* atuncia cand iese din cadru si vrem ca bordurile sa nu se vede cand iese */
+}
+#flavors{
+  position:relative;
+  background-color: blue;
+  top: 0%;
+  left: -20%;
+  width: 140%
+  height: 120%
+  background-image: linear-gradient(0deg, red, red 33%, yellow 33%, yellow 66%, blue 66%, blue);
+   transform rotate(150deg);
+  background-position:0px 0px;
+  background-repeat: repeat-y;
+  animation-name: animate 30s linear infinite;
+  /* animation-repeat: infinite;
+  animation-duration: 30s; */
+  /* sau pot sa scriu asta, dar eu am colapsat intr-una in sus */
+
+}
+#stick{
+  width: 57px;
+  height: 86px;
+  background-color: brown;
+  border-radius: 0 0 25px 25px;
+  display:block;
+  margin:0 auto;
+}
+@keyframes animate{
+  to{
+    background-position: 0px, -1000px;
+  }
+}
